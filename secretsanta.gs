@@ -30,7 +30,7 @@ function assignRandomGiveto() {
     const emailAddress = data[i + headerRow][emailColumnIndex];
     const recipientName = data[i + headerRow][nameColumnIndex];
     const subject = "secret santa notification";
-    const message = `merry christmas ${recipientName}, your secret santa is ${assignedName}.`;
+    const message = `merry christmas ${recipientName}, your secret santa is ${assignedName}`;
     MailApp.sendEmail(emailAddress, subject, message);
   }
 
